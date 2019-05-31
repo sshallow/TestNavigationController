@@ -1,13 +1,12 @@
 //
 //  AppDelegate.m
-//  testNAV
+//  TestNavigationController
 //
-//  Created by shangshuai on 2019/5/16.
-//  Copyright © 2019 shangshuai. All rights reserved.
+//  Created by shangshuai on 2019/5/31.
+//  Copyright © 2019 ink. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "MainTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -18,12 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    //mainTabBar控制器
-    MainTabBarController *mainTabBarController = [[MainTabBarController alloc]init];
-//    mainTabBarController.selectedIndex = 1;
-    mainTabBarController.tabBar.tintColor = [UIColor whiteColor];
-    mainTabBarController.tabBar.barTintColor = [UIColor colorWithRed:26/255.0 green:33/255.0 blue:46/255.0 alpha:1];
-    self.window.rootViewController = mainTabBarController;
     return YES;
 }
 
